@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Renamer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Tab Renamer</h2>
+    
+    <!-- Current tab rename section -->
+    <div class="section">
+      <h3>Current Tab</h3>
+      <div class="form-group">
+        <input type="text" id="newTitle" placeholder="Enter new tab title">
+        <button id="renameButton">Rename Tab</button>
+      </div>
+      <div class="form-group checkboxes">
+        <label>
+          <input type="checkbox" id="lockTitle"> Lock title (prevent auto-updates)
+        </label>
+        <label>
+          <input type="checkbox" id="markImportant"> Mark as important (confirm before closing)
+        </label>
+      </div>
+    </div>
+
+    <!-- Renamed tabs list section -->
+    <div class="section">
+      <h3>Renamed Tabs</h3>
+      <div id="renamedTabsList" class="renamed-tabs-list">
+        <!-- Tabs will be inserted here dynamically -->
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
